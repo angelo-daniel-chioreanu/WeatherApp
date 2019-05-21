@@ -34,7 +34,7 @@
                 <Binding Path="ZIP" UpdateSourceTrigger="PropertyChanged">
                     <Binding.ValidationRules>
                         <local:RegularExpressionValidationRule 
-                            Expression="^[0-9]{5,5}$" 
+                            Expression="^\d{5}$" 
                             ErrorMessage="ZIP must be 5 decimals" 
                             ValidatesOnTargetUpdated="True" />
                     </Binding.ValidationRules>
@@ -46,7 +46,7 @@
                 <Binding Path="APPID" UpdateSourceTrigger="PropertyChanged">
                     <Binding.ValidationRules>
                         <local:RegularExpressionValidationRule 
-                            Expression="^[0-9a-fA-F]{32,32}$" 
+                            Expression="^[0-9a-fA-F]{32}$" 
                             ErrorMessage="APPID must be 32 hexadecimals" 
                             ValidatesOnTargetUpdated="True" />
                     </Binding.ValidationRules>
